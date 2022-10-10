@@ -1,0 +1,4 @@
+.project-card__title {
+  grid-area: title;
+  margin: 0;
+}

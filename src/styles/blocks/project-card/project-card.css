@@ -1,0 +1,14 @@
+.project-card {
+  max-width: 1074px;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  grid-template-rows: minmax(min-content, max-content) repeat(2, 1fr);
+  grid-template-areas:
+  "title title title"
+  "image line description"
+  "image line stack";
+  justify-items: center;
+  align-items: center;
+  column-gap: 3%;
+  padding: 0 3% 0 3%;
+}

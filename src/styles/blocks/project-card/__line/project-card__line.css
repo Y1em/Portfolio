@@ -1,0 +1,5 @@
+.project-card__line {
+  grid-area: line;
+  border-left: 1px solid rgb(160, 160, 160);
+  height: 100%;
+}
