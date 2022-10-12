@@ -1,7 +1,25 @@
 .project-card__description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
   grid-area: description;
   width: 100%;
   max-width: 500px;
   margin: 0;
   text-align: justify;
+  justify-self: start;
+}
+
+@media screen and (max-width: 1100px) {
+  .project-card__description {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .project-card__description {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }

@@ -1,0 +1,28 @@
+.project-card__link-text {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  transition: opacity .7s;
+  font-weight: 500;
+  line-height: 56px;
+  font-size: 56px;
+  color: white;
+  margin: 0;
+  padding: 45% 0 45% 0;
+  text-shadow: 0 0 15px black;
+}
+
+.project-card__link-text:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 890px) {
+  .project-card__link-text {
+    font-size: 38px;
+    line-height: 40px;
+  }
+}

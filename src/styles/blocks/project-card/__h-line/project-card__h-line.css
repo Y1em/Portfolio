@@ -1,0 +1,13 @@
+.project-card__h-line {
+  grid-area: h-line;
+  border-bottom: 1px solid rgb(160, 160, 160);
+  width: 100%;
+  max-width: 500px;
+  justify-self: start;
+}
+
+@media screen and (max-width: 790px) {
+  .project-card__h-line {
+    margin: 14px 0 14px 0;
+  }
+}

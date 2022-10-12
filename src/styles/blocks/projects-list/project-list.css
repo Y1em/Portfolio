@@ -1,8 +1,9 @@
 .projects-list {
   max-width: 1150px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }

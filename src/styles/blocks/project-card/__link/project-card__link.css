@@ -1,0 +1,39 @@
+.project-card__link {
+  grid-area: image;
+  position: relative;
+  display: block;
+  border-radius: 10%;
+  overflow: hidden;
+  text-decoration: none;
+  aspect-ratio: 1/1;
+  filter:grayscale(1);
+  transition: filter .5s;
+  cursor: pointer;
+  justify-self: end;
+}
+
+.project-card__link:hover {
+  filter:grayscale(0);
+}
+
+.project-card__link::before {
+  position: absolute;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  content: '';
+  background-color: rgba(0, 0, 0, .2);
+  transform: scale(0);
+  transition: transform .5s;
+}
+
+.project-card__link:hover::before {
+  transform: scale(1.5);
+}
+
+
+
+

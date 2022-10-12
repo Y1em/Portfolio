@@ -6,32 +6,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eugene Popov's portfolio</title>
   </head>
-  <body>
+  <body class="body">
 
-    <ul class="projects-list">
+    <section class="page">
 
-      <li class="project-card">
-        <h2 class="project-card__title">
-          Mesto
-        </h2>
-        <img
-          class="project-card__image"
-          src="<%=require('./images/mesto-project.jpg')%>"
-          alt="Mesto project"
-        >
-        <div class="project-card__line"></div>
-        <p class="project-card__description">
-          A simplified analogue of the social network Instagram. The project implements the
-          functionality of working with the API of a remote back-end server. Form validation
-          is also implemented on the front-end. The project is completely refactored from
-          functional JS to OOP.
+      <header class="header">
+        <h1 class="header__title">Portfolio</h1>
+        <p class="header__subtitle">
+          Hello! Here you can see Eugene Popov’s portfolio as web developer. I would like to show you my works
         </p>
-        <p class="project-card__stack">
-          Stack: HTML, CSS,  JavaScript, API, OOP, Git, BEM, Figma
-        </p>
-      </li>
+      </header>
 
-    </ul>
+      <ul class="projects-list">
+
+        <li class="project-card">
+          <h2 class="project-card__title">
+            Mesto
+          </h2>
+          <a class="project-card__link" href="https://y1em.github.io/mesto-project/" target="_blank">
+            <p class="project-card__link-text">Link</p>
+            <img
+              class="project-card__image"
+              src="<%=require('./images/mesto-project.jpg')%>"
+              alt="Mesto project"
+            >
+          </a>
+          <div class="project-card__line"></div>
+          <p class="project-card__description">
+            A simplified analogue of the social media Instagram. The project implements the
+            functionality of working with the API of a remote back-end server. Form validation
+            is also implemented on the front-end. The project is completely refactored from
+            functional JS to OOP.
+          </p>
+          <div class="project-card__h-line"></div>
+          <p class="project-card__stack">
+            Stack: HTML, CSS,  JavaScript, API, OOP, Git, BEM, Figma
+          </p>
+        </li>
+
+        <li class="project-card">
+          <h2 class="project-card__title">
+            Balapanlar
+          </h2>
+          <a class="project-card__link balapanlar">
+            <p class="project-card__link-text">Link</p>
+            <img
+              class="project-card__image"
+              src="<%=require('./images/balapanlar-project.jpg')%>"
+              alt="Balapanlar project"
+            >
+          </a>
+          <div class="project-card__line"></div>
+          <p class="project-card__description">
+            Landing page for the non-profit organization "Balapanlar". Responsive
+            layout of a web page with the connection of library GreenSock for
+            implement a horizontal scroll.
+          </p>
+          <div class="project-card__h-line"></div>
+          <p class="project-card__stack">
+            Stack: HTML, CSS,  JavaScript, API, JavaScript library, Git, BEM, Figma
+          </p>
+        </li>
+
+        <li class="project-card">
+          <h2 class="project-card__title">
+            Journeys
+          </h2>
+          <a class="project-card__link" href="https://y1em.github.io/another-one/" target="_blank">
+            <p class="project-card__link-text">Link</p>
+            <img
+              class="project-card__image"
+              src="<%=require('./images/journeys-project.jpg')%>"
+              alt="Journeys project"
+            >
+          </a>
+          <div class="project-card__line"></div>
+          <p class="project-card__description">
+            Another studying project - responsive web page for any device
+          </p>
+          <div class="project-card__h-line"></div>
+          <p class="project-card__stack">
+            Stack: HTML, CSS, Git, BEM, Figma
+          </p>
+        </li>
+
+        <li class="project-card">
+          <h2 class="project-card__title">
+            How to learn
+          </h2>
+          <a class="project-card__link" href="https://y1em.github.io/how-to-learn-plus/" target="_blank">
+            <p class="project-card__link-text">Link</p>
+            <img
+              class="project-card__image"
+              src="<%=require('./images/how-to-learn-project.jpg')%>"
+              alt="How to learn project"
+            >
+          </a>
+          <div class="project-card__line"></div>
+          <p class="project-card__description">
+            First studying project - quite simple web page
+          </p>
+          <div class="project-card__h-line"></div>
+          <p class="project-card__stack">
+            Stack: HTML, CSS, Git, BEM
+          </p>
+        </li>
+
+      </ul>
+
+      <footer class="footer">
+        <ul class="contacts-list">
+          <li class="contact">
+            <a class="contact__link" href="https://telegram.me/slave_of_the_art" target="_blank">
+              <img
+              class="contact__image"
+              src="<%=require('./images/telegram-icon.svg')%>"
+              alt="Telegram icon"
+              >
+            </a>
+          </li>
+          <li class="contact">
+            <a class="contact__link" href="mailto:tpyiihbiu@gmail.com" target="_blank">
+              <img
+              class="contact__image"
+              src="<%=require('./images/mail-icon.svg')%>"
+              alt="Mail icon"
+              >
+            </a>
+          </li>
+          <li class="contact">
+            <a class="contact__link" href="https://github.com/Y1em" target="_blank">
+              <img
+              class="contact__image"
+              src="<%=require('./images/gh-icon.svg')%>"
+              alt="Github icon"
+              >
+            </a>
+          </li>
+        </ul>
+      </footer>
+
+    </section>
+
+    <section class="popup">
+      <div class="popup__container">
+        <p class="popup__info">Project Balapanlar is under developing now. Release planned on end of 2022. While you can see github repository.</p>
+        <a class="popup__button" href="https://github.com/BreadLinx/balapanlar" target="_blank">Link</a>
+        <button class="popup__button popup__button-cancel">Cancel</button>
+      </div>
+    </section>
+
+
 
   </body>
 </html>

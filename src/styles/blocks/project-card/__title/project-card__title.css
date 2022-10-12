@@ -1,4 +1,23 @@
 .project-card__title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  text-decoration-line: underline;
   grid-area: title;
   margin: 0;
+  padding-bottom: 21px;
 }
+
+@media screen and (max-width: 890px) {
+  .project-card__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .project-card__title {
+    padding-bottom: 11px;
+  }
+}
+

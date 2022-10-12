@@ -1,0 +1,7 @@
+.contact {
+  margin-right: 22px;
+}
+
+.contact:last-of-type {
+  margin-right: 0;
+}
