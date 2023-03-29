@@ -1,4 +1,4 @@
-import './styles/index.css'; // добавьте импорт главного файла стилей
+import './styles/index.css';
 
 const balaLink = document.querySelector(".balapanlar");
 const popup = document.querySelector(".popup");
